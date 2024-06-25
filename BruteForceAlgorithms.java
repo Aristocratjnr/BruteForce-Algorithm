@@ -9,6 +9,7 @@ public class BruteForceAlgorithms {
             System.out.println("3. Bubble Sort");
             System.out.println("4. Selection Sort");
             System.out.println("5. Exhaustive Search (Fibonacci)");
+            System.out.println("6. Factorial Calculation");
 
             int choice = scanner.nextInt();
 
@@ -18,6 +19,7 @@ public class BruteForceAlgorithms {
                 case 3 -> bubbleSort();
                 case 4 -> selectionSort();
                 case 5 -> exhaustiveSearchFibonacci();
+                case 6 -> factorialCalculation();
                 default -> System.out.println("Invalid choice");
             }
         }
@@ -151,5 +153,30 @@ public class BruteForceAlgorithms {
             case 1 -> 1;
             default -> exhaustiveSearchFibonacci(target - 1) + exhaustiveSearchFibonacci(target - 2);
         };
+    }
+
+    // Factorial Calculation
+    public static void factorialCalculation() {
+        int n = 5; // Example input for factorial calculation
+
+        long startTime = System.nanoTime();
+        long result = factorial(n);
+        long endTime = System.nanoTime();
+
+        System.out.println("Factorial of " + n + ": " + result);
+        System.out.println("Running time: " + (endTime - startTime) + " nanoseconds");
+        System.out.println("Time complexity: O(n)");
+
+    }
+
+    public static long factorial(int n) {
+        if (n < 0) {
+            throw new IllegalArgumentException("Factorial is not defined for negative numbers");
+        }
+        long fact = 1;
+        for (int i = 2; i <= n; i++) {
+            fact *= i;
+        }
+        return fact;
     }
 }
