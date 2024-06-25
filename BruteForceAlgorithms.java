@@ -13,23 +13,12 @@ public class BruteForceAlgorithms {
             int choice = scanner.nextInt();
 
             switch (choice) {
-                case 1:
-                    linearSearch();
-                    break;
-                case 2:
-                    binarySearch();
-                    break;
-                case 3:
-                    bubbleSort();
-                    break;
-                case 4:
-                    selectionSort();
-                    break;
-                case 5:
-                    exhaustiveSearchFibonacci();
-                    break;
-                default:
-                    System.out.println("Invalid choice");
+                case 1 -> linearSearch();
+                case 2 -> binarySearch();
+                case 3 -> bubbleSort();
+                case 4 -> selectionSort();
+                case 5 -> exhaustiveSearchFibonacci();
+                default -> System.out.println("Invalid choice");
             }
         }
     }
