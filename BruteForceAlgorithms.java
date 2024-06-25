@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+// Brute Force Algorithms
 public class BruteForceAlgorithms {
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
