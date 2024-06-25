@@ -157,7 +157,7 @@ public class BruteForceAlgorithms {
 
     // Factorial Calculation
     public static void factorialCalculation() {
-        int n = 5; // Example input for factorial calculation
+        int n = 5; // Change the value of n to calculate the factorial of a different number
 
         long startTime = System.nanoTime();
         long result = factorial(n);
