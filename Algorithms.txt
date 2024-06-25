@@ -1,0 +1,21 @@
+Linear Search:
+Running time: (endTime - startTime) + " nanoseconds"
+
+Time complexity: O(n)
+Binary Search:
+Running time: (endTime - startTime) + " nanoseconds"
+
+Time complexity: O(log n)
+Bubble Sort:
+Running time: (endTime - startTime) + " nanoseconds"
+
+Time complexity: O(n^2)
+Selection Sort:
+Running time: (endTime - startTime) + " nanoseconds"
+
+Time complexity: O(n^2)
+Exhaustive Search (Fibonacci):
+Running time: (endTime - startTime) + " nanoseconds"
+
+Time complexity: O(2^n)
+The System.nanoTime() method is used to measure the running time of each algorithm in nanoseconds. The time complexity is the theoretical upper bound of the running time and is represented as a function of the input size.
