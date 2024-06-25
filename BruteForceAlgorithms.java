@@ -117,7 +117,7 @@ public class BruteForceAlgorithms {
         System.out.println("Running time: " + (endTime - startTime) + " nanoseconds");
         System.out.println("Time complexity: O(n^2)");
     }
-
+// Selection Sort
     public static void selectionSort(int[] arr) {
         int n = arr.length;
         for (int i = 0; i < n - 1; i++) {
