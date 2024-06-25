@@ -146,13 +146,10 @@ public class BruteForceAlgorithms {
     }
 
     public static int exhaustiveSearchFibonacci(int target) {
-        switch (target) {
-            case 0:
-                return 0;
-            case 1:
-                return 1;
-            default:
-                return exhaustiveSearchFibonacci(target - 1) + exhaustiveSearchFibonacci(target - 2);
-        }
+        return switch (target) {
+            case 0 -> 0;
+            case 1 -> 1;
+            default -> exhaustiveSearchFibonacci(target - 1) + exhaustiveSearchFibonacci(target - 2);
+        };
     }
 }
